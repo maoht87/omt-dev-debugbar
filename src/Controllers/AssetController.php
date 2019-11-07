@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\Debugbar\Controllers;
+<?php namespace omt\Debugbar\Controllers;
 
 use Illuminate\Http\Response;
 

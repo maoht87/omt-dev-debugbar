@@ -1,6 +1,6 @@
 <?php
 
-namespace Barryvdh\Debugbar\Storage;
+namespace omt\Debugbar\Storage;
 
 use DebugBar\Storage\StorageInterface;
 use Illuminate\Filesystem\Filesystem;

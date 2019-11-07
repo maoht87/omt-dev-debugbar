@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\Debugbar\Twig\Extension;
+<?php namespace omt\Debugbar\Twig\Extension;
 
 use DebugBar\DataFormatter\DataFormatterInterface;
 use Twig_Environment;

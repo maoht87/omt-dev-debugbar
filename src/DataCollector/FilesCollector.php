@@ -1,6 +1,6 @@
 <?php
 
-namespace Barryvdh\Debugbar\DataCollector;
+namespace omt\Debugbar\DataCollector;
 
 use DebugBar\DataCollector\DataCollector;
 use DebugBar\DataCollector\Renderable;
@@ -36,7 +36,7 @@ class FilesCollector extends DataCollector implements Renderable
             // Of course some files are stil always loaded (ServiceProvider, Facade etc)
             if (strpos($file, 'vendor/maximebf/debugbar/src') !== false || strpos(
                     $file,
-                    'vendor/barryvdh/laravel-debugbar/src'
+                    'vendor/omt/omt-dev-debugbar/src'
                 ) !== false
             ) {
                 continue;

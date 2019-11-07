@@ -1,6 +1,6 @@
-<?php namespace Barryvdh\Debugbar\Twig\TokenParser;
+<?php namespace omt\Debugbar\Twig\TokenParser;
 
-use Barryvdh\Debugbar\Twig\Node\StopwatchNode;
+use omt\Debugbar\Twig\Node\StopwatchNode;
 
 /**
  * Token Parser for the stopwatch tag. Based on Symfony\Bridge\Twig\TokenParser\StopwatchTokenParser;

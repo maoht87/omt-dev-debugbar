@@ -1,10 +1,10 @@
-<?php namespace Barryvdh\Debugbar\Middleware;
+<?php namespace omt\Debugbar\Middleware;
 
 use Error;
 use Closure;
 use Exception;
 use Illuminate\Http\Request;
-use Barryvdh\Debugbar\LaravelDebugbar;
+use omt\Debugbar\LaravelDebugbar;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Symfony\Component\Debug\Exception\FatalThrowableError;

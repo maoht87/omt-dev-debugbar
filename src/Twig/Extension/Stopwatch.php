@@ -1,6 +1,6 @@
-<?php namespace Barryvdh\Debugbar\Twig\Extension;
+<?php namespace omt\Debugbar\Twig\Extension;
 
-use Barryvdh\Debugbar\Twig\TokenParser\StopwatchTokenParser;
+use omt\Debugbar\Twig\TokenParser\StopwatchTokenParser;
 use Illuminate\Foundation\Application;
 use Twig_Extension;
 
@@ -11,7 +11,7 @@ use Twig_Extension;
 class Stopwatch extends Twig_Extension
 {
     /**
-     * @var \Barryvdh\Debugbar\LaravelDebugbar
+     * @var \omt\Debugbar\LaravelDebugbar
      */
     protected $debugbar;
 

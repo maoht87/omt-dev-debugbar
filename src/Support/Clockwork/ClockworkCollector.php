@@ -1,6 +1,6 @@
 <?php
 
-namespace Barryvdh\Debugbar\Support\Clockwork;
+namespace omt\Debugbar\Support\Clockwork;
 
 use DebugBar\DataCollector\DataCollector;
 use DebugBar\DataCollector\DataCollectorInterface;

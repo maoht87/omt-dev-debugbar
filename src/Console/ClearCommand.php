@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\Debugbar\Console;
+<?php namespace omt\Debugbar\Console;
 
 use DebugBar\DebugBar;
 use Illuminate\Console\Command;

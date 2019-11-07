@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\Debugbar;
+<?php namespace omt\Debugbar;
 
 use DebugBar\DebugBar;
 use DebugBar\JavascriptRenderer as BaseJavascriptRenderer;
@@ -17,7 +17,7 @@ class JavascriptRenderer extends BaseJavascriptRenderer
     {
         parent::__construct($debugBar, $baseUrl, $basePath);
 
-        $this->cssFiles['laravel'] = __DIR__ . '/Resources/laravel-debugbar.css';
+        $this->cssFiles['laravel'] = __DIR__ . '/Resources/omt-dev-debugbar.css';
         $this->cssVendors['fontawesome'] = __DIR__ . '/Resources/vendor/font-awesome/style.css';
         $this->jsFiles['laravel-sql'] = __DIR__ . '/Resources/sqlqueries/widget.js';
         $this->jsFiles['laravel-cache'] = __DIR__ . '/Resources/cache/widget.js';

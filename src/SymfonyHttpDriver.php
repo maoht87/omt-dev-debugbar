@@ -1,6 +1,6 @@
 <?php
 
-namespace Barryvdh\Debugbar;
+namespace omt\Debugbar;
 
 use DebugBar\HttpDriverInterface;
 use Symfony\Component\HttpFoundation\Response;

@@ -4,11 +4,11 @@ if (!function_exists('debugbar')) {
     /**
      * Get the Debugbar instance
      *
-     * @return \Barryvdh\Debugbar\LaravelDebugbar
+     * @return \omt\Debugbar\LaravelDebugbar
      */
     function debugbar()
     {
-        return app(\Barryvdh\Debugbar\LaravelDebugbar::class);
+        return app(\omt\Debugbar\LaravelDebugbar::class);
     }
 }
 

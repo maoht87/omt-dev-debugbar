@@ -1,5 +1,5 @@
 <?php
-namespace Barryvdh\Debugbar\DataCollector;
+namespace omt\Debugbar\DataCollector;
 
 use DebugBar\DataCollector\MessagesCollector;
 use Psr\Log\LogLevel;

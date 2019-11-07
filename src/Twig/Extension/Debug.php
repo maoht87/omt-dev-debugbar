@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\Debugbar\Twig\Extension;
+<?php namespace omt\Debugbar\Twig\Extension;
 
 use Illuminate\Foundation\Application;
 use Twig_Environment;
@@ -11,7 +11,7 @@ use Twig_SimpleFunction;
 class Debug extends Twig_Extension
 {
     /**
-     * @var \Barryvdh\Debugbar\LaravelDebugbar
+     * @var \omt\Debugbar\LaravelDebugbar
      */
     protected $debugbar;
 

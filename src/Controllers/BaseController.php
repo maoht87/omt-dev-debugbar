@@ -1,6 +1,6 @@
-<?php namespace Barryvdh\Debugbar\Controllers;
+<?php namespace omt\Debugbar\Controllers;
 
-use Barryvdh\Debugbar\LaravelDebugbar;
+use omt\Debugbar\LaravelDebugbar;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use Laravel\Telescope\Telescope;

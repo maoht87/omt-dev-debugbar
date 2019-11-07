@@ -1,6 +1,6 @@
-<?php namespace Barryvdh\Debugbar\Controllers;
+<?php namespace omt\Debugbar\Controllers;
 
-use Barryvdh\Debugbar\Support\Clockwork\Converter;
+use omt\Debugbar\Support\Clockwork\Converter;
 use DebugBar\OpenHandler;
 use Illuminate\Http\Response;
 use Laravel\Telescope\Contracts\EntriesRepository;

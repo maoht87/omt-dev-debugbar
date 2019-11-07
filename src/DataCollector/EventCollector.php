@@ -1,7 +1,7 @@
 <?php
-namespace Barryvdh\Debugbar\DataCollector;
+namespace omt\Debugbar\DataCollector;
 
-use Barryvdh\Debugbar\DataFormatter\SimpleFormatter;
+use omt\Debugbar\DataFormatter\SimpleFormatter;
 use DebugBar\DataCollector\TimeDataCollector;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Support\Str;
@@ -43,7 +43,7 @@ class EventCollector extends TimeDataCollector
                 $reflector = new \ReflectionFunction($listener);
 
                 // Skip our own listeners
-                if ($reflector->getNamespaceName() == 'Barryvdh\Debugbar') {
+                if ($reflector->getNamespaceName() == 'omt\Debugbar') {
                     continue;
                 }
 

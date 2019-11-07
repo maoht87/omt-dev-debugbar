@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\Debugbar\Twig\Node;
+<?php namespace omt\Debugbar\Twig\Node;
 
 /**
  * Represents a stopwatch node. Based on Symfony\Bridge\Twig\Node\StopwatchNode

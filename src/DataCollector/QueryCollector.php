@@ -1,6 +1,6 @@
 <?php
 
-namespace Barryvdh\Debugbar\DataCollector;
+namespace omt\Debugbar\DataCollector;
 
 use DebugBar\DataCollector\PDO\PDOCollector;
 use DebugBar\DataCollector\TimeDataCollector;
@@ -70,7 +70,7 @@ class QueryCollector extends PDOCollector
     public function setExplainSource($enabled, $types)
     {
         $this->explainQuery = $enabled;
-        // workaround ['SELECT'] only. https://github.com/barryvdh/laravel-debugbar/issues/888
+        // workaround ['SELECT'] only. https://github.com/omt/omt-dev-debugbar/issues/888
 //        if($types){
 //            $this->explainTypes = $types;
 //        }
@@ -275,7 +275,7 @@ class QueryCollector extends PDOCollector
         $excludedPaths = [
             '/vendor/laravel/framework/src/Illuminate/Database',
             '/vendor/laravel/framework/src/Illuminate/Events',
-            '/vendor/barryvdh/laravel-debugbar',
+            '/vendor/omt/omt-dev-debugbar',
         ];
 
         $normalizedPath = str_replace('\\', '/', $file);

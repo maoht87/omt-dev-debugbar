@@ -1,6 +1,6 @@
 <?php
 
-namespace Barryvdh\Debugbar\DataFormatter;
+namespace omt\Debugbar\DataFormatter;
 
 use DebugBar\DataFormatter\DataFormatter;
 

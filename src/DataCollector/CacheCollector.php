@@ -1,5 +1,5 @@
 <?php
-namespace Barryvdh\Debugbar\DataCollector;
+namespace omt\Debugbar\DataCollector;
 
 use DebugBar\DataCollector\TimeDataCollector;
 use Illuminate\Cache\Events\CacheEvent;

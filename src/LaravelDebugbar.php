@@ -1,19 +1,19 @@
-<?php namespace Barryvdh\Debugbar;
+<?php namespace omt\Debugbar;
 
-use Barryvdh\Debugbar\DataCollector\AuthCollector;
-use Barryvdh\Debugbar\DataCollector\CacheCollector;
-use Barryvdh\Debugbar\DataCollector\EventCollector;
-use Barryvdh\Debugbar\DataCollector\FilesCollector;
-use Barryvdh\Debugbar\DataCollector\GateCollector;
-use Barryvdh\Debugbar\DataCollector\LaravelCollector;
-use Barryvdh\Debugbar\DataCollector\LogsCollector;
-use Barryvdh\Debugbar\DataCollector\ModelsCollector;
-use Barryvdh\Debugbar\DataCollector\MultiAuthCollector;
-use Barryvdh\Debugbar\DataCollector\QueryCollector;
-use Barryvdh\Debugbar\DataCollector\SessionCollector;
-use Barryvdh\Debugbar\DataCollector\RequestCollector;
-use Barryvdh\Debugbar\DataCollector\ViewCollector;
-use Barryvdh\Debugbar\Storage\FilesystemStorage;
+use omt\Debugbar\DataCollector\AuthCollector;
+use omt\Debugbar\DataCollector\CacheCollector;
+use omt\Debugbar\DataCollector\EventCollector;
+use omt\Debugbar\DataCollector\FilesCollector;
+use omt\Debugbar\DataCollector\GateCollector;
+use omt\Debugbar\DataCollector\LaravelCollector;
+use omt\Debugbar\DataCollector\LogsCollector;
+use omt\Debugbar\DataCollector\ModelsCollector;
+use omt\Debugbar\DataCollector\MultiAuthCollector;
+use omt\Debugbar\DataCollector\QueryCollector;
+use omt\Debugbar\DataCollector\SessionCollector;
+use omt\Debugbar\DataCollector\RequestCollector;
+use omt\Debugbar\DataCollector\ViewCollector;
+use omt\Debugbar\Storage\FilesystemStorage;
 use DebugBar\Bridge\MonologCollector;
 use DebugBar\Bridge\SwiftMailer\SwiftLogCollector;
 use DebugBar\Bridge\SwiftMailer\SwiftMailCollector;
@@ -25,8 +25,8 @@ use DebugBar\DataCollector\MessagesCollector;
 use DebugBar\DataCollector\PhpInfoCollector;
 use DebugBar\DataCollector\RequestDataCollector;
 use DebugBar\DataCollector\TimeDataCollector;
-use Barryvdh\Debugbar\DataFormatter\QueryFormatter;
-use Barryvdh\Debugbar\Support\Clockwork\ClockworkCollector;
+use omt\Debugbar\DataFormatter\QueryFormatter;
+use omt\Debugbar\Support\Clockwork\ClockworkCollector;
 use DebugBar\DebugBar;
 use DebugBar\Storage\PdoStorage;
 use DebugBar\Storage\RedisStorage;
@@ -123,7 +123,7 @@ class LaravelDebugbar extends DebugBar
             return;
         }
 
-        /** @var \Barryvdh\Debugbar\LaravelDebugbar $debugbar */
+        /** @var \omt\Debugbar\LaravelDebugbar $debugbar */
         $debugbar = $this;
 
         /** @var Application $app */
@@ -226,7 +226,7 @@ class LaravelDebugbar extends DebugBar
 
         if (!$this->isLumen() && $this->shouldCollect('route')) {
             try {
-                $this->addCollector($this->app->make('Barryvdh\Debugbar\DataCollector\RouteCollector'));
+                $this->addCollector($this->app->make('omt\Debugbar\DataCollector\RouteCollector'));
             } catch (\Exception $e) {
                 $this->addThrowable(
                     new Exception(
@@ -408,7 +408,7 @@ class LaravelDebugbar extends DebugBar
 
         if ($this->shouldCollect('models', false)) {
             try {
-                $modelsCollector = $this->app->make('Barryvdh\Debugbar\DataCollector\ModelsCollector');
+                $modelsCollector = $this->app->make('omt\Debugbar\DataCollector\ModelsCollector');
                 $this->addCollector($modelsCollector);
             } catch (\Exception $e){
                 // No Models collector
@@ -470,7 +470,7 @@ class LaravelDebugbar extends DebugBar
 
         if ($this->shouldCollect('gate', false)) {
             try {
-                $gateCollector = $this->app->make('Barryvdh\Debugbar\DataCollector\GateCollector');
+                $gateCollector = $this->app->make('omt\Debugbar\DataCollector\GateCollector');
                 $this->addCollector($gateCollector);
             } catch (\Exception $e){
                 // No Gate collector

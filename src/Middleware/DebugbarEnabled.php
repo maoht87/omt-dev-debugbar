@@ -1,8 +1,8 @@
-<?php namespace Barryvdh\Debugbar\Middleware;
+<?php namespace omt\Debugbar\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Barryvdh\Debugbar\LaravelDebugbar;
+use omt\Debugbar\LaravelDebugbar;
 
 class DebugbarEnabled
 {

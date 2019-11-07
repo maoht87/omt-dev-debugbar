@@ -1,12 +1,12 @@
 {
-    "name": "barryvdh/laravel-debugbar",
+    "name": "omt/omt-dev-debugbar",
     "description": "PHP Debugbar integration for Laravel",
     "keywords": ["laravel", "debugbar", "profiler", "debug", "webprofiler"],
     "license": "MIT",
     "authors": [
         {
             "name": "Barry vd. Heuvel",
-            "email": "barryvdh@gmail.com"
+            "email": "omt@gmail.com"
         }
     ],
     "require": {
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Barryvdh\\Debugbar\\": "src/"
+            "omt\\Debugbar\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -34,10 +34,10 @@
         },
         "laravel": {
             "providers": [
-                "Barryvdh\\Debugbar\\ServiceProvider"
+                "omt\\Debugbar\\ServiceProvider"
             ],
             "aliases": {
-                "Debugbar": "Barryvdh\\Debugbar\\Facade"
+                "Debugbar": "omt\\Debugbar\\Facade"
             }
         }
     },

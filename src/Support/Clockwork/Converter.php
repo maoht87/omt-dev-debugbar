@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\Debugbar\Support\Clockwork;
+<?php namespace omt\Debugbar\Support\Clockwork;
 
 class Converter {
 
